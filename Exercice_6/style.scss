@@ -1,0 +1,18 @@
+$hover-color: lightgray;
+$visited-color:  #FF0066;
+
+@mixin transform ($hover-color) {
+  background-color: $hover-color;
+  transform: $hover-color;
+  }
+ol:hover { @include transform (lightgray);}
+
+@mixin transform ($visited-color) {
+  color: $visited-color;
+  transform: $visited-color;
+  }
+a:visited { @include transform (#FF0066);}
+
+a:visited {
+.titre{background-image:url("/home/celine/EXERCICES/HTML_CSS/SASS/DC_exercices_sass/DC_exercices_sass/Exercice_6/background.jpg")
+}}

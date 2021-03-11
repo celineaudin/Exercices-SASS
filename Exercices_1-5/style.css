@@ -1,0 +1,57 @@
+h4 {
+  color: #FF0000;
+}
+
+h1 {
+  color: #FF0066;
+}
+
+.titre {
+  color: #9900CC;
+}
+
+.corps {
+  color: #339999;
+}
+
+h1 {
+  font-size: 4em;
+  transform: 4em;
+}
+
+p {
+  font-family: helvetica;
+  transform: helvetica;
+}
+
+ul {
+  color: yellow;
+  transform: yellow;
+}
+
+.corps li {
+  color: green;
+  transform: green;
+}
+
+.corps li {
+  text-decoration: underline;
+  transform: underline;
+}
+
+.corps ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.corps li {
+  text-decoration: line-through;
+}
+
+p:hover {
+  background-color: lightgray;
+  text-decoration: underline;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

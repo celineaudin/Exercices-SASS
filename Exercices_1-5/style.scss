@@ -1,0 +1,85 @@
+$primary-color: #FF0000;
+$secondary-color: #FF0066;
+$tertiary-color: #9900CC;
+$quaternary-color: #339999;
+
+h4 {
+  color: $primary-color;
+}
+
+h1 {
+  color: $secondary-color;
+}
+
+.titre {
+  color: $tertiary-color;
+}
+
+.corps {
+  color:  $quaternary-color;
+}
+
+
+@mixin transform($property) {
+  font-size: $property;
+  transform: $property;
+}
+h1 { @include transform (4em);}
+
+@mixin transform($property) {
+  font-family: $property;
+  transform: $property;
+}
+p { @include transform (helvetica);}
+
+@mixin transform($property) {
+  color: $property;
+  transform: $property;
+}
+ul { @include transform (yellow);}
+
+
+
+@mixin transform($property) {
+  color: $property;
+  transform: $property;
+}
+
+.corps li{ @include transform (green);}
+
+@mixin transform($property) {
+  text-decoration: $property;
+  transform: $property;
+}
+.corps li{ @include transform (underline);}
+
+//@mixin treatmentChoice {
+//color: green;
+//font-size: 45px;
+//}
+//
+//.choice{
+//background-color: grey;
+//}
+//.corps2{
+//@include treatmentChoice;
+//@extend .choice;
+//}
+
+
+.corps {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { text-decoration:line-through;}
+}
+
+//on utilise le pseudo element hover sur le p afin de lui appliquer différentes proprietes au passage de la souris.
+p:hover {
+  background-color: lightgray;
+  text-decoration: underline;
+  color: black;
+}
